@@ -38,4 +38,6 @@ if __name__ == "__main__":
     cypher = re.sub("[^A-Z]", "", cypher) # 只留A-Z
     cypher = np.array(list(cypher))
 
-    print(f'key len: {compute_key_len(cypher)}')
+    key_len = compute_key_len(cypher)
+    #print(f'key len: {key_len}')
+    print(key_len)

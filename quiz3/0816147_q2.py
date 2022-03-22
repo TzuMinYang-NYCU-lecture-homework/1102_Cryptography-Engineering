@@ -79,6 +79,7 @@ if __name__ == "__main__":
 
     key_len = compute_key_len(cypher)
     key = compute_key(key_len, cypher)
-    plaintext = decrypt(key, cypher)
+    #plaintext = decrypt(key, cypher)
 
-    print(f'key len: {key_len}\nkey: {key}\nplaintext: {plaintext}')
+    #print(f'key len: {key_len}\nkey: {key}\nplaintext: {plaintext}')
+    print(key)
