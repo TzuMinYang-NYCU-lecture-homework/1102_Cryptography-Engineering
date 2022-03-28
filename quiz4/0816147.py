@@ -90,7 +90,6 @@ def Markov_decision_process_decrypt(cypher_text, row_num, column_num):
 
         elif plaintext[0, col] == "R":
             plaintext[:, [1, col]] = plaintext[:, [col, 1]]
-    
 
     for cur_col in range(2, column_num):    # 確定cur_col要放哪一行
         max_weight = 0
