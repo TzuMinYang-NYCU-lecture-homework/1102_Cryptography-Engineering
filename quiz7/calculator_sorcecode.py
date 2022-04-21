@@ -75,9 +75,9 @@ def Berlekamp_Massey_algorithm(sequence):
 
 
 if __name__ == '__main__':
-    seq = "000000100000110000101000111100100010110011101010011111010000111000100100110110101101111011000110100101"
+    seq = "10111110"
     seq = tuple(int(i) for i in seq)
-    #seq = (1,0,1,1,0,0,0,1)
+    seq = (0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
     (poly, span) = Berlekamp_Massey_algorithm(seq)
 
     print ('The input sequence is %s.' % str(seq))
